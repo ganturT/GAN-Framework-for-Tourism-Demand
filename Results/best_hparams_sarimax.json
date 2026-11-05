@@ -1,0 +1,1 @@
+{"order": "(2, 0, 0)", "seasonal_order": "(0, 1, 1, 12)", "features": ["search", "covid"], "nowcast": true, "val_RMSE": 8022.649041453363}

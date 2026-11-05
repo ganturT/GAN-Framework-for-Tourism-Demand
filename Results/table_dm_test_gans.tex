@@ -1,0 +1,17 @@
+\begin{table}[H]
+\caption{Diebold--Mariano test between the loss functions of the GAN on the test set ($h = 1$, Harvey--Leybourne--Newbold correction). A negative statistic indicates that the first loss function in each comparison has the smaller loss; $p$-values are two-sided and values below 0.05 are shown in bold. The forecasts averaged over four seeds are used for each GAN variant.\label{tab:dm}}
+\begin{adjustwidth}{-\extralength}{0cm}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\fulllength}{lCCCC}
+\toprule
+ & \multicolumn{2}{c}{\textbf{Squared Loss}} & \multicolumn{2}{c}{\textbf{Absolute Loss}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+\textbf{Comparison} & \textbf{DM} & \textbf{\boldmath$p$} & \textbf{DM} & \textbf{\boldmath$p$} \\
+\midrule
+BCE vs. BCE + MSE & $-1.089$ & 0.290 & $-1.096$ & 0.288 \\
+BCE vs. WGAN-GP & $-1.438$ & 0.168 & $-1.927$ & 0.070 \\
+BCE + MSE vs. WGAN-GP & $-0.439$ & 0.666 & $-1.182$ & 0.253 \\
+\bottomrule
+\end{tabularx}
+\end{adjustwidth}
+\end{table}

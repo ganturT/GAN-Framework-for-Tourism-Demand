@@ -1,0 +1,7 @@
+comparison,loss,DM,p_two_sided,p_one_sided
+GAN (BCE) vs GAN (BCE + MSE),squared,-1.089,0.2904,0.1452
+GAN (BCE) vs GAN (BCE + MSE),absolute,-1.096,0.2877,0.1439
+GAN (BCE) vs GAN (WGAN-GP),squared,-1.438,0.1676,0.0838
+GAN (BCE) vs GAN (WGAN-GP),absolute,-1.927,0.07,0.035
+GAN (BCE + MSE) vs GAN (WGAN-GP),squared,-0.439,0.6657,0.3328
+GAN (BCE + MSE) vs GAN (WGAN-GP),absolute,-1.182,0.2528,0.1264

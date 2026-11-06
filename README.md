@@ -28,7 +28,7 @@ GAN-Framework-for-Tourism-Demand/
 | Column   | Description |
 |----------|-------------|
 | `date`   | First day of the month (YYYY-MM-DD) |
-| `volume` | Number of inbound tourist arrivals ([National Statistics Office of Mongolia](https://www.1212.mn)) |
+| `volume` | Number of inbound tourist arrivals  |
 | `search` | log(1 + mean of five Google Trends search indices) |
 | `sin12`, `cos12` | Cyclical month terms, sin(2πm/12) and cos(2πm/12) |
 | `covid`  | COVID-19 dummy (1 from March 2020 to March 2022, 0 otherwise) |

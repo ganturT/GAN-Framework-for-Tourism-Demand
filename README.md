@@ -1,5 +1,7 @@
 # A Generative Adversarial Network Framework for Tourism Demand Forecasting: A Comparison of Loss Functions
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23980035.svg)](https://doi.org/10.5281/zenodo.23980035)
+
 This repository contains the code and data for the study "A Generative Adversarial Network Framework for Tourism Demand Forecasting: A Comparison of Loss Functions".
 
 The study forecasts monthly inbound tourist arrivals to Mongolia (January 2017 – October 2025) with a GAN that uses a GRU-based generator and a Conv1D-based discriminator, and compares three loss functions on the same architecture: binary cross-entropy (BCE), BCE combined with mean squared error (BCE + MSE), and the Wasserstein loss with gradient penalty (WGAN-GP). The GAN variants are compared with a seasonal naive forecast and with ARIMAX, SARIMAX, SVR, ANN, LSTM and GRU benchmarks.
@@ -7,7 +9,7 @@ The study forecasts monthly inbound tourist arrivals to Mongolia (January 2017 �
 ## Repository structure
 
 ```
-tourism-gan-forecasting/
+GAN-Framework-for-Tourism-Demand/
 ├── Code/                       Python scripts (see the table below)
 ├── Data/
 │   └── main_dataset.csv        Monthly dataset used in the study
@@ -90,13 +92,17 @@ python Code/PR_all_models_plots.py
 
 The neural models are tuned with three seeds (10, 11, 12), and the configuration with the lowest mean + standard deviation of the validation RMSE is selected. The final models are trained with four seeds (0, 1, 2, 3), and results are reported as mean ± standard deviation over these seeds. The test set is not used for any model selection. Because of differences in hardware and library versions, re-running the neural models may give slightly different numbers from those in the paper; the predictions and metrics used in the paper are stored in `Results/`.
 
-
-
 ## GAN model design
 
 The GRU generator and Conv1D discriminator architecture of the GAN model is adapted from Lin et al. (2021):
 
 > H. Lin, C. Chen, G. Huang and A. Jafari, "Stock price prediction using generative adversarial networks," *Journal of Computer Science*, vol. 17, pp. 188–196, 2021. https://doi.org/10.3844/jcssp.2021.188.196
+
+## Citation
+
+If you use this code or data, please cite the archived version:
+
+> Togtokh, G., Khurelbaatar, S., Jeon, H. S. and Bat-Orshikh, M. (2026). Code and data for "A Generative Adversarial Network Framework for Tourism Demand Forecasting: A Comparison of Loss Functions" (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23980035
 
 ## License
 
